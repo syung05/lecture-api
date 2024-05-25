@@ -1,0 +1,20 @@
+### GET 전체강연
+GET http://localhost:8080/lecture?showAll=true
+Content-Type: application/json
+
+### GET
+GET http://localhost:8080/lecture?showAll=false
+Content-Type: application/json
+
+### POST
+POST http://localhost:8080/lecture
+Content-Type: application/json
+
+{
+  "place" : 1,
+  "lecturer" : "lecturer",
+  "limitNumber" : 2,
+  "lectureDateTime" : "2024-05-27 12:00:00",
+  "lectureDetail" : "1"
+
+}

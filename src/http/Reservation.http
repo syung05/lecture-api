@@ -1,0 +1,30 @@
+### GET
+GET http://localhost:8080/reservation
+Content-Type: application/json
+
+
+### GET 강연 신청자 목록
+GET http://localhost:8080/reservation?lectureId=1
+Content-Type: application/json
+
+### GET 강연 신청자 검색
+GET http://localhost:8080/reservation?participant=12349
+Content-Type: application/json
+
+### GET 인기 강연
+GET http://localhost:8080/reservation/popular
+Content-Type: application/json
+
+### POST
+POST http://localhost:8080/reservation
+Content-Type: application/json
+
+{
+  "lectureId" : 1,
+  "participant" : "22345"
+
+}
+
+### DELETE
+DELETE http://localhost:8080/reservation/8
+Content-Type: application/json
